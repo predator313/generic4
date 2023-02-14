@@ -8,5 +8,16 @@
 </head>
 <body>
     <h1>hey every one this is the list view generic concept</h1>
+    
+    {% for student in student_list %}
+        <hr>
+        {{student.id}}<br>
+        {{student.roll}}<br>
+        {{student.name}}<br>
+        {{student.course}}<br>
+        <hr>
+    
+    {% endfor %}
+        
 </body>
 </html>
