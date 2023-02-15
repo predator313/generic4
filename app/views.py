@@ -7,4 +7,7 @@ class StudentListview(ListView):
     # template_name_suffix='_list'
     #template_name_suffix if we want to change in ours default and make ours some things own custom
     #we also do ordering here
-    ordering=['name']
+    ordering=['id']
+    #if we want to give our own template instead of 
+    #default template
+    template_name='app/home.html'
