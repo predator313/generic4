@@ -11,3 +11,8 @@ class StudentListview(ListView):
     #if we want to give our own template instead of 
     #default template
     template_name='app/home.html'
+    #we also use inbuilt method def __queryset
+    #to return the query set filter the query set
+    def get_queryset(self):
+        return Student.objects.filter(id='2')
+    #get_queryset will return the relevent filter amount of the data
